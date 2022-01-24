@@ -2,59 +2,55 @@
     margin:0%;
     box-sizing: border-box;
    }
-  
+    
    .container{
-     display: flex;
      height: 100vh;
-     flex-direction: column;
-     justify-content: center;
-     align-content: center;
-     }
+     color: blanchedalmond;
+    }
+
+    .mydiv, .flexdiv{  /* reikia kablelio */
+        height: 50%;
+    }
+    
    .mydiv{
-     height:100%;
-     width: 100%;
      background-color:  rgb(72, 11, 100);
      display: flex;
      justify-content: center;
-     align-content: center;
+     align-items: center;
    }
    .flexdiv{
-     height:100%;
-     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   }   
+   .flexdiv div{
+     height:50%;
+     width: 50%;
      display: flex;
      justify-content: center;
-     align-content: center;
-     flex-wrap: wrap;
+     align-items: center;
    }
-  .flexdiv div:nth-child(1){
+    .flexdiv div:nth-child(1){
      background-color: rgb(236, 10, 10);
-     height: 50%;
-     width: 50%;
-      border: solid;
      }
     .flexdiv div:nth-child(2){
      background-color: green;
-     height: 50%;
-     width: 50%;
-      border: solid;
-     }
+    }
      .flexdiv div:nth-child(3){
      background-color: rgb(235, 183, 15);  
-     height: 50%;
-     width: 50%;
-     border: solid;
      }
      .flexdiv div:nth-child(4){
-     background-color: rgb(235, 15, 151);  
-     height: 50%;
-     width: 50%;
-     border: solid;
+     background-color: rgb(235, 15, 151);
      }
   
-     @media (min-width:600px){
-       .container{
-       flex-direction: row;
-     } }
+     @media screen and (min-width: 768px) {
+       .container {
+          display: flex;
+       }
+    .flexdiv, .mydiv{
+height: 100%;
+width: 50%;
+}
+     } 
        
      
      
